@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us </title>
+</head>
+<style>
+ /* General styling for the body */
+body {
+    background-image: url("../Recipes/images/back3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff8c00;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Box styling for each recipe */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    color: #ff8c00;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+p, ol {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contact-form {
+    width: 100%;
+    max-width: 400px; /* Limit the width to 400px */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Add some margin for small screens */
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+    
+
+</style>
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">About Us</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="/submit_contact_form" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mashabela Baatseba. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
